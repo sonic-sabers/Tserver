@@ -3,7 +3,7 @@ require('./config/db');
 const app = require('express')();
 const UserRouter = require('./api/User');
 
-const port = process.epnv.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 const bodyParser = require('express').json;
 app.use(bodyParser());
